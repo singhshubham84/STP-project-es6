@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "c5321013-f70e-44c2-b6ce-5cace410ca8b",
+		"name": "STP assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createpatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"shubham singh\" ,\r\n    \"contactDetails\":9876543210,\r\n    \"address\":\"ballia\" ,\r\n    \"pincode\":221133 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/createpatient",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"createpatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPatient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/getpatient?id=64017c4c63a455fc008e310",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getpatient"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "64017c4c63a455fc008e310"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePatient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:3000/deletepatient?id=64018c3bf269d009338331e2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deletepatient"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "64018c3bf269d009338331e2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePatient",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
